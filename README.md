@@ -1,4 +1,4 @@
-# Variable
+# Variables
 
 ## Learning Goals
 
@@ -108,7 +108,8 @@ think the program will output now?
     <summary>What do you think the program will output now?</summary>
 
   <p>Answer: <br>
-     <code>Katie <br> Emily</code>
+     <p><code>Katie</code></p>
+     <p style="margin-top: -18px"><code>Emily</code></p>
   </p>
 
 </details>
