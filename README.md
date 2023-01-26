@@ -58,7 +58,7 @@ public class Main {
 
 The first part of that statement is the type of variable, which indicates to
 Java the kind of value we are expecting to store in this variable. The second
-part is the name we want to be able to refer to the variable as. Once we define
+part is the name we want to be able to refer to the variable as. Once we declare
 a variable, we can give it a value, and we can refer to it at a later stage.
 
 Now if we want to change the name, we can easily just change the name variable
@@ -85,8 +85,84 @@ Katie
 Try changing the `name` variable to your name now! Then run the program and see
 if it prints out your name!
 
-We can even change the value of the variable later on too! Modify the program to
-look like this:
+## Terminology
+
+Let's go over a couple of terms you may hear: declaring, initializing, and
+assigning.
+
+**Declaring**: A variable declaration is when we introduce a variable into
+a program. We declare a variable like this:
+
+```java
+// The variable, name, is declared
+String name;
+```
+
+Notice when we declare a variable, we must put the data type in front of the
+variable name, as this is how we define a variable.
+
+**Initializing**: A variable initialization is when we give or assign an initial
+value to a variable. We can initialize a variable like this:
+
+```java
+// The variable, name1, is declared AND initialized to "Katie"
+String name1 = "Katie";
+
+// The variable, name2, is declared
+String name2;
+
+// The variable, name2, is now initialized to "Emily"
+name2 = "Emily";
+```
+
+When we declare and initialize a variable at the same time, we must put the data
+type in front of the variable name to first declare the variable.
+
+If we initialize after, we do not need to put the data type in front of the
+variable name as it has already been declared.
+
+**Assigning**: A variable assignment or re-assignment occurs when we provide a
+value to a variable. We can assign a variable like this:
+
+```java
+// The variable, name, is declared
+String name;
+
+/* The variable is now being initialized AND assigned to "Katie"
+   Note: Initialization is referred to the first time a variable is assigned a value */     
+name = "Katie";
+
+// The variable is now being assigned (or re-assigned) to "Emily"
+name = "Emily";
+```
+
+## Comprehension Check
+
+Consider the following code:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String name;
+        name = "Katie";
+        System.out.println(name);
+    }
+}
+```
+
+<details>
+    <summary>What do you think the program will output?</summary>
+
+  <p>Answer: <br>
+     <p><code>Katie</code></p>
+  </p>
+
+  <p>Even though the variable, <code>name</code>, is declared on a different line from where it is initialized, it will still assign the <code>name</code> variable to "Katie".</p>
+  <p>In this case, it would make more sense for us to just initialize the variable to the value, "Katie", but this is just another possibility for demonstration purposes.</p>
+
+</details>
+
+Let's modify the code a little bit. Consider the modified program:
 
 ```java
 public class Main {
@@ -101,9 +177,6 @@ public class Main {
 }
 ```
 
-Notice halfway through the program, we change the value of `name`. What do you
-think the program will output now?
-
 <details>
     <summary>What do you think the program will output now?</summary>
 
@@ -112,23 +185,9 @@ think the program will output now?
      <p style="margin-top: -18px"><code>Emily</code></p>
   </p>
 
+  <p>We re-assign the variable <code>name</code> to "Emily" halfway through the program. Therefore, when we do that, if we print out the <code>name</code>variable again, it will now print the re-assigned value.</p>
+
 </details>
-
-We could also initialize the variable after defining it like this:
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        String name;
-        name = "Katie";
-        System.out.println(name);
-    }
-}
-```
-
-In this case, it would make more sense for us to just initialize the variable to
-the value, "Katie", but this is just another possibility for demonstration
-purposes.
 
 ## Variable Naming Convention
 
