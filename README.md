@@ -136,6 +136,25 @@ name = "Katie";
 name = "Emily";
 ```
 
+It is important to note that in order to use the variable, it must be
+initialized to a value prior to trying to use it in a statement. Let's look at
+what happens when we declare a variable, but don't initialize it and try to use
+it.
+
+IntelliJ will first warn us of an error:
+
+![use-variable-without-initialization-intellij](https://curriculum-content.s3.amazonaws.com/java-mod-1/variables/intellij-use-variable-without-initialization.png)
+
+If we ignore the error and still try to run the program, the compiler will then
+throw the following error:
+
+```text
+java: variable name might not have been initialized
+```
+
+We cannot use a variable that has not been initialized because we have not
+assigned it an initial value yet.
+
 ## Comprehension Check
 
 Consider the following code:
